@@ -44,7 +44,7 @@ def accuracy(datos_numpy_list, etiquetas_char_list, weight):
 
 
 ### Busqueda Local ###
-def local_search_P1(datos_numpy_list, etiquetas_char_lis, weights):
+def local_search_P1(datos_numpy_list, etiquetas_char_lis, weights, max_evaluaciones = 750):
     num_attributes = len(datos_numpy_list[0][0])
     best_fitness = calculate_fitness(weights,datos_numpy_list, etiquetas_char_lis)
 
@@ -53,7 +53,7 @@ def local_search_P1(datos_numpy_list, etiquetas_char_lis, weights):
     # todo 15000 evaluaciones de la función objetivo, es decir, en cuanto se cumpla alguna de las 
     # todo dos condiciones.
     i = 0
-    while i <= 750:
+    while i <= max_evaluaciones:
         # Perform local search by generating a neighbor instance
         neighbor = generar_vecino(num_attributes, weights, 0.3)
         
@@ -92,9 +92,10 @@ def local_search(w,datos_numpy_list, etiquetas_char_lis, i):
     w[1] = best_fitness
     return i
 # Le estoy pasando la variación estandar en vez de la varianza.
-def generar_vecino(num_attributes, weights, s):
+def generar_vecino(num_attributes, weights, s, temperatura = 0):
+    s += s * temperatura
     neighbor = np.copy(weights)  # Establece la semilla del generador de números aleatorios    # Generate a random neighbor by adding a vector Z generated from a normal distribution
-    Z = np.random.normal(0, s, num_attributes)
+    Z = np.random.normal(0, np.sqrt(s), num_attributes)
     neighbor += Z
     # Truncate the components to ensure they stay within the range [0, 1]
     neighbor = np.clip(neighbor, 0, 1)
