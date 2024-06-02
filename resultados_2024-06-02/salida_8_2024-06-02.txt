@@ -1,0 +1,59 @@
+8. BMB.
+BMB -> Peso: [0.84602504 0.         0.         0.         0.         0.
+ 0.80762104 0.2562063  0.         0.         0.         0.
+ 0.09070652 0.60990495 0.         0.44074868 1.         0.085288
+ 0.         0.         0.63634228 0.         0.         0.
+ 0.         0.         0.         0.         0.57309533 0.464732  ]
+
+*******************************************************************
+
+¡Datos y etiquetas del archivo Instancias_APC/breast-cancer_1.arff!
+- 98.26%
+- 93.91%
+- 89.57%
+- 93.91%
+- 94.50%
+Porcentaje de coincidencia promedio: 94.03%
+Porcentaje de reducción: 70.00%
+Fitness: 89.22
+La función se ejecutó en 50.30742526054382 segundos
+
+*******************************************************************
+8. BMB.
+BMB -> Peso: [0.         0.59159479 0.         0.         0.         0.3866131
+ 0.        ]
+
+*******************************************************************
+
+¡Datos y etiquetas del archivo Instancias_APC/ecoli_1.arff!
+- 71.43%
+- 55.71%
+- 70.59%
+- 67.65%
+- 73.33%
+Porcentaje de coincidencia promedio: 67.74%
+Porcentaje de reducción: 71.43%
+Fitness: 68.48
+La función se ejecutó en 10.626591920852661 segundos
+
+*******************************************************************
+8. BMB.
+BMB -> Peso: [0.56119499 0.50038301 0.68878839 0.         0.         0.02667541
+ 0.         0.44989897 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.31086611 0.94575027
+ 0.         1.         0.         1.        ]
+
+*******************************************************************
+
+¡Datos y etiquetas del archivo Instancias_APC/parkinsons_1.arff!
+- 95.00%
+- 92.50%
+- 92.50%
+- 90.00%
+- 94.29%
+Porcentaje de coincidencia promedio: 92.86%
+Porcentaje de reducción: 63.64%
+Fitness: 87.01
+La función se ejecutó en 8.536081075668335 segundos
+
+*******************************************************************
